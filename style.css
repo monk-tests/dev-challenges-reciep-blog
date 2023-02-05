@@ -256,7 +256,7 @@ ul {
 /* * mobile */
 
 .container {
-    padding: 0 .75rem;
+    padding: 0 1rem;
 }
 header {
     padding-top: 2rem;
@@ -327,7 +327,7 @@ header div {
 .sub-recipe ul {
     margin-top: 1.5rem;
     display: grid;
-    gap: .75rem;
+    gap: 1rem;
     font-size: var(--fs-200);
 }
 
@@ -357,3 +357,115 @@ header div {
     color: inherit;
     text-decoration: none;
 }
+
+@media (min-width: 600px)
+{
+    .container {
+        padding: 0 2rem;
+    }
+    header, .recipe-ingredients, .recipe-instructions {
+        max-width: 37rem;
+    }
+    .detail {
+        column-gap: .75rem;
+    }
+    .detail-itself {
+        font-size: var(--fs-200);
+    }
+    .detail-icon {
+        font-size: var(--fs-500);
+    }
+    .detail-name,
+    .detail-itself {
+        line-height: .825rem;
+    }
+    .ingredient {
+        gap: 1rem;
+    }
+    .ingredient p {
+        font-size: var(--fs-300);
+    }
+    .recipe-ingredients {
+        margin-top: 2.5rem;
+    }
+    .recipe-source {
+        margin-top: 2rem;
+    }
+}
+@media (min-width: 900px) {
+    .recipe {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .recipe-quick-details {
+        display: flex;
+        flex-direction: column;
+        margin: 4rem;
+    }
+    .detail-icon {
+        font-size: 1.75rem;
+    }
+    .recipe-quick-details {
+        gap: 2rem;
+    }
+
+    /*  */
+    header {
+        padding-top: 3rem;
+    }
+    .recipe-title {
+        font-size: var(--fs-700);
+    }
+    .recipe-img {
+        margin-top: 2.5rem;
+    }
+
+    /*  */
+    .recipe-ingredients h2 {
+        font-size: var(--fs-500);
+        margin-top: 3rem;
+    }
+    .recipe-ingredients h3 {
+        font-size: var(--fs-400);
+    }
+    .sub-recipe:first-of-type {
+        margin-top: 2rem;
+    }
+    .sub-recipe {
+        margin-top: 2.5rem;
+    }
+
+    .recipe-instructions ol {
+        margin-top: 2rem;
+        gap: 1.5rem;
+    }
+}
+
+/* credit */
+
+.credit {
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+
+    color: #a9a9a9;
+    font-family:'Montserrat', sans-serif;;
+    font-size: 14px;
+}
+.credit a {
+    color: inherit;
+}
+.credit--user {
+    font-weight: var(--fw-bold);
+}
+.credit--devchallenges {
+    text-decoration: none;
+}
+/* @media (min-width: 900px) {
+    .credit {
+        display: flex;
+    }
+} */
